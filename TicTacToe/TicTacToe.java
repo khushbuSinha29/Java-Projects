@@ -43,6 +43,7 @@ public class TicTacToe {
             scan.close();
         }
  
+        // Printing the values of the board.
     public static void printBoard(char[][] board){
       System.out.println();
       for(int i=0; i<board.length;i++){
@@ -70,12 +71,12 @@ public class TicTacToe {
       return spot;
     }
 
-
+// Finding the winner of the game.
      public static int winner(char[][] board){
         int count=0;
        for(int i=0;i<board.length;i++){
          for(int j=0;j<board[i].length;j++){
-          //  CHECKING every row
+          //  Checking for rows
            if(board[i][j]=='X'){
              count++;
            }else if(board[i][j]=='O'){
@@ -89,6 +90,7 @@ public class TicTacToe {
          }
        }
 
+      //  Checking for columns 
        for (int i = 0; i < board.length; i++) {
          for (int j = 0; j < board[i].length; j++) {
            // CHECKING every row
@@ -106,7 +108,7 @@ public class TicTacToe {
        }
 
 
-      //  for the diagonal
+      // checking for right diagonal
        for(int i=0;i<board.length;i++){
         
             if (board[i][i] == 'X') {
@@ -122,6 +124,7 @@ public class TicTacToe {
            count =0;
          }
        
+        //  checking for the left diagonal.
        for(int i=0;i<board.length;i++){
          int rowindex = 2 - i;
          if(board[rowindex][i]=='X'){
