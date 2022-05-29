@@ -1,0 +1,5 @@
+-> The dealership sells many types of cars.
+-> A car is identified by its make, price,year, and color.
+-> The dealership app should be able to search for cars based on the make and price.
+-> After a sale, the car must frive to the nearest exit.
+  
